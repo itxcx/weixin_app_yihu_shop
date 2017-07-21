@@ -1,3 +1,4 @@
 # weixin_app_yihu_shop
-微信小程序，艺乎商城
-![image](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png)
+微信小程序，艺乎商城 <br />  
+艺乎商城，包括:推荐，轮播图，作者详情，，购物车，个人中心，收藏，地址版块，位置支付，订单列表，浏览记录。<br />  
+![image](https://coolliyong.github.io/weixin_app_yihu_shop/yihu_shop.GIF)
