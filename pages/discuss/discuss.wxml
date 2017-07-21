@@ -1,0 +1,15 @@
+<!--评论-->
+<view class="container">
+  <!--评论-->
+  <view class="indent_num top_b" wx:if="{{!discuss_data}}">
+    <text>暂无评论</text>
+  </view>
+  <view class="list_main pad30">
+    <block wx:for="{{discuss_data}}">
+      <!--评论主题-->
+      <view class=" row list">
+        <text class="label" catchtap="add_discuess" data-index="{{index}}">{{item.title}}({{item.numbs}})</text>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="main">
+    <view class="list row">
+      <text>头像</text>
+      <view class="col">
+        <image src="{{userinfo.avatarUrl}}" class="photo"></image>
+        <!--<image src="../icon/ico_next3.png"></image>-->
+      </view>
+    </view>
+    <view class="list row pad_tb_30">
+      <text>昵称</text>
+      <view>
+        <text>{{userinfo.nickName}}</text>
+        <!--<image src="../icon/ico_next3.png"></image>-->
+      </view>
+    </view>
+    <view class="list row pad_tb_30">
+      <text>性别</text>
+      <view>
+        <text wx:if="{{userinfo.gender == 1}}">男</text>
+        <text wx:if="{{userinfo.gender == 0}}">女</text>
+        <!--<image src="../icon/ico_next3.png"></image>-->
+      </view>
+    </view>
+
+    <!--<view class="list row pad_tb_30">
+      <text>出生日期</text>
+      <view>
+        <text></text>
+        <image src="../icon/ico_next3.png"></image>
+      </view>
+    </view>-->
+  </view>
+</view>

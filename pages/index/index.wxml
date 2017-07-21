@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<import src="/pages/templates/template.wxml" />
+<view class="container">
+
+  <view class="header">
+    <block wx:for="{{heads}}">
+      <image src="{{r_url}}{{item.head}}" class="{{index == 2?'sel_photo':''}}" catchtap="author_datail" data-index="{{index}}"></image>
+    </block>
+  </view>
+
+  <!--<text wx:if="{{is_move == true}}">111111111111111111111111</text>-->
+  <image src="../icon/head_bor.png" class="head_bor"></image>
+  <view class="slide" bindtouchstart="move" bindtouchend="end_move">
+    <swiper bindchange="swiper" current="{{2}}" circular="{{true}}">
+      <block wx:for="{{words}}">
+        <swiper-item data-index="{{index}}" catchtap="datail">
+          <image src="{{r_url}}{{item.works[0].thumb}}" class="slide-image" />
+          <text class="words_title">{{item.works[0].title}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <image src="{{r_url}}{{img_left}}" class="{{is_move == true?'is_dim':''}} img_left" mode="aspectFill"></image>
+
+  <image src="{{r_url}}{{img_right}}" class="{{is_move == true?'is_dim':''}} img_right" mode="aspectFill"></image>
+  <view class="bottom_up_btn" catchtap="author_datail" data-action="lock">
+    <!--<image src="../icon/ico_up.png" class="ico_up"></image>-->
+    <view class="pad30">
+      <text>点击查看</text>
+      <text class="bold">{{words[slide_i].plover}}</text>
+      <text>其他作品</text>
+    </view>
+  </view>
+</view>
+
+
+<template is="foot_nav" data="{{temp_data}}"></template>

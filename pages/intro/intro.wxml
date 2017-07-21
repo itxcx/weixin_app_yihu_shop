@@ -1,0 +1,45 @@
+<!--pages/intro/intro.wxml-->
+<view class="container">
+  <view class="infos">
+    <image src="{{r_url}}{{author.head}}"></image>
+    <text class="blue px32 bold text-center">{{author.plover}}</text>
+    <text class="gray px26 text-center">{{author.yob}}</text>
+    <text class="gray px26 text-center">{{author.acad}}</text>
+  </view>
+  <view class="col pad30 txt">
+    <text class="blue px32 bold">艺术家简介</text>
+    <view class="infos_hide col" wx:if="{{!is_show}}">
+      <text class="gray px26 lh_40">{{author.sign}}</text>
+      <view class="show_all" catchtap="is_show_all">展开全部</view>
+    </view>
+    <view class="infos_show col" wx:if="{{is_show}}">
+      <text class="gray px26 lh_40">{{author.sign}}</text>
+      <view class="show_all" catchtap="is_show_all">收起全部</view>
+    </view>
+  </view>
+  <!--作品-->
+  <scroll-view class="scroll_max pad30" scroll-x="true">
+    <block wx:for="{{author_data.delegate}}">
+      <view class="scroll_list">
+        <image src="../icon/test.jpg"></image>
+        <text class="gray px26 text-center">气质</text>
+      </view>
+    </block>
+  </scroll-view>
+  <text class="blue px32 bold year_title">作品列表</text>
+  <scroll-view class="scroll_year pad30 pad_top0" scroll-x="true">
+    <block wx:for="{{years}}">
+      <text class="{{index== sel_year? 'blue bold':'gray'}} px26 text-center" catchtap="sel_year" data-index="{{index}}">{{item}}</text>
+    </block>
+  </scroll-view>
+  <view class="words_list">
+    <block wx:for="{{author_data.works}}">
+      <view class="words_item" catchtap="datail" data-index="{{index}}">
+        <image src="{{r_url}}{{item.thumb}}"></image>
+        <text class="gray">{{item.title}}</text>
+        <image src="../icon/is_shop.png" class="is_shop" wx:if="{{item.numbers>0}}"></image>
+      </view>
+    </block>
+  </view>
+
+</view>

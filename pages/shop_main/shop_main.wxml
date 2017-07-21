@@ -1,0 +1,57 @@
+<!--商城.wxml-->
+<import src="/pages/templates/template.wxml" />
+<view class="container bot_pad">
+  <view class="nav_title row">
+    <view class="row" catchtap="sort" data-index="{{1}}">
+      <text class="{{sel_time!== '0'?'blue':'gray'}}">时间</text>
+      <image src="../icon/sort_not.png" wx:if="{{sel_time === '0'}}"></image>
+      <image src="../icon/sort_up.png" wx:if="{{sel_time === 0}}"></image>
+      <image src="../icon/sort_down.png" wx:if="{{sel_time === 1}}"></image>
+    </view>
+    <view class="row" catchtap="sort" data-index="{{2}}">
+      <text class="{{sel_size!== '0'?'blue':'gray'}}">尺幅</text>
+      <image src="../icon/sort_not.png" wx:if="{{sel_size === '0'}}"></image>
+      <image src="../icon/sort_up.png" wx:if="{{sel_size === 1}}"></image>
+      <image src="../icon/sort_down.png" wx:if="{{sel_size === 0}}"></image>
+    </view>
+    <view class="row" catchtap="sort" data-index="{{3}}">
+      <text class="{{sel_money!== '0'?'blue':'gray'}}">价格</text>
+      <image src="../icon/sort_not.png" wx:if="{{sel_money === '0'}}"></image>
+      <image src="../icon/sort_up.png" wx:if="{{sel_money === 1}}"></image>
+      <image src="../icon/sort_down.png" wx:if="{{sel_money === 0}}"></image>
+    </view>
+  </view>
+  <view class="not_data" wx:if="{{!shop_data}}">
+    <image src="../icon/not_data_1.png"></image>
+    <text>暂无更多商品</text>
+  </view>
+  <view class="row list">
+    <block wx:for="{{shop_data}}">
+      <view class="list_main col" catchtap="datail" data-index="{{index}}">
+        <image src="{{r_url}}{{item.thumb}}"></image>
+        <text class="title">{{item.title}}</text>
+        <view class="list_txt">
+          <view class="list_left">
+            <text class="gray">{{item.subtitle}}</text>
+            <text class="money">¥{{item.price}}</text>
+          </view>
+          <view class="classname" catchtap="add_shop_car" data-index='{{index}}'>
+            <image src="../icon/add_shop_car.png" class="shop_car"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+
+
+
+
+
+
+<template is="foot_nav" data="{{temp_data}}"></template>
+
+
+<!--底部模板-->

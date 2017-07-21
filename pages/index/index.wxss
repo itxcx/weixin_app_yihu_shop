@@ -1,0 +1,142 @@
+/*index.css*/
+
+.header {
+  width: 100%;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 30rpx;
+  margin: 30rpx 0 20rpx 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.words_title {
+  font-size: 34rpx;
+  color: #fff;
+  position: absolute;
+  bottom: 35rpx;
+  right: 35rpx;
+  background: rgba(19, 32, 81, 0.5);
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+}
+
+.header scroll-view {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.header .sel_photo {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+}
+
+.head_bor {
+  height: 2rpx;
+  width: 690rpx;
+  display: flex;
+}
+
+.slide {
+  width: 690rpx;
+  margin: 30rpx auto 0;
+  display: flex;
+  flex-direction: row;
+  height: 800rpx;
+  border-radius: 25rpx;
+  box-sizing: border-box;
+  /*box-shadow: 0 5rpx 35rpx #93a8c6;*/
+  overflow: hidden;
+}
+
+.slide swiper, .slide wwiper-item {
+  height: 100%;
+  width: 100%;
+  border-radius: 25rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.slide swiper-item {
+  border-radius: 25rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25rpx;
+  transform: scale(0.95);
+}
+
+.bottom_up_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom_up_btn image {
+  width: 34rpx;
+  height: 32rpx;
+  margin: 30rpx 0 14rpx;
+}
+
+.bottom_up_btn text {
+  font-size: 28rpx;
+  color: #6e6e6e;
+}
+
+.bottom_up_btn .bold {
+  color: #36465d;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.img_left, .img_right {
+  position: absolute;
+  height: 706rpx;
+  width: 192rpx;
+  top: 230rpx;
+  z-index: -5;
+}
+
+.is_dim {
+  filter: blur(5px);
+}
+
+.img_left {
+  left: 0;
+}
+
+.img_right {
+  right: 0;
+}
+
+.header swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll_top {
+  width: 100%;
+  position: relative;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 1000rpx;
+}

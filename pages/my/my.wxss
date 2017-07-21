@@ -1,0 +1,172 @@
+view {
+  display: flex;
+}
+
+image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+page {
+  background: rgb(243, 243, 243);
+}
+
+navigator {
+  display: block;
+}
+
+.title {
+  width: 100%;
+  padding: 45rpx 28rpx 28rpx;
+  box-sizing: border-box;
+  background: #36465d;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+}
+
+.hide {
+  display: none !important;
+}
+
+.name {
+  color: #fff;
+  font-size: 32rpx;
+  margin-left: 28rpx;
+  letter-spacing: 5rpx;
+}
+
+.my_order {
+  width: 100%;
+  font-size: 36rpx;
+  color: #555;
+  box-sizing: border-box;
+  line-height: 36rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.my_order navigator {
+  padding: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.my_order image {
+  width: 23rpx;
+  height: 35rpx;
+  margin: 5rpx 0 0 25rpx;
+}
+
+.my_order navigator text {
+  line-height: 45rpx;
+}
+
+.my_order navigator view {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  color: #cfcfcf;
+  /*justify-content: flex-start*/
+}
+
+.icos {
+  width: 100%;
+  flex-direction: row;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.ico {
+  flex-direction: column;
+  align-content: center;
+}
+
+.ico navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*align-content: center;*/
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.ico text {
+  color: #36465d;
+  text-align: center;
+  margin-top: 10rpx;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.ico image {
+  width: 50rpx;
+  height: 46rpx;
+}
+
+.ico_num {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: -10rpx;
+  right: 5rpx;
+  background: rgb(240, 72, 72);
+  border-radius: 20rpx;
+}
+
+.ico_num text {
+  color: #fff;
+  line-height: 0;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.message {
+  width: 100%;
+  margin-top: 12rpx;
+  flex-direction: column;
+}
+
+.my_collect {
+  width: 100%;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.my_collect:last-child {
+  border: 0;
+}
+
+.my_collect text {
+  color: #132051;
+  font-size: 32rpx;
+}
+
+.my_collect navigator {
+  display: flex;
+  align-content: center;
+  padding: 20rpx 0;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.next_ico {
+  width: 23rpx;
+  height: 35rpx;
+}

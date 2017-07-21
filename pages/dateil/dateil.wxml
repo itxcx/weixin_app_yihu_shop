@@ -1,0 +1,82 @@
+<!--pages/dateil/dateil.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+<view class="container bot_pad">
+  <swiper class="banner" indicator-dots='{{true}}' indicator-color="rgb(175,175,175,0.8)" indicator-active-color="rgb(255,255,255)" catchtap="lock_banner">
+    <block wx:for="{{shop_data.imgs}}">
+      <swiper-item>
+        <image src="{{r_url}}{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+
+  </swiper>
+  <view class="author pad30" catchtap="goro_author">
+    <view class="author_info">
+      <image src="{{r_url}}{{author.head}}"></image>
+      <text class="bold blue px32">{{author.plover}}</text>
+    </view>
+    <image src="../icon/ico_next4.png" class="ico_next"></image>
+  </view>
+  <view class="shop_infos">
+    <view class="txt_left">
+      <text class="bold blue px32">{{shop_data.title}}</text>
+      <text class="gray px26">{{shop_data.custom_time}}</text>
+      <text class="gray px26">{{shop_data.subtitle}}</text>
+    </view>
+    <view class="txt_right">
+      ¥{{money}}
+    </view>
+  </view>
+
+  <view class="shop_protos pad30" wx:if="{{param.length}}">
+    <view class="protos">
+      <block wx:for="{{param}}">
+        <view class="proto_item" wx:if="{{item.val != ''}}" data-index="{{index}}" catchtap="sel_proto">
+          <image src="../icon/sel_0.png" wx:if="{{proto_sel != index }}"></image>
+          <image src="../icon/sel_1.png" wx:if="{{proto_sel == index}}"></image>
+          <text class="proto_name">{{item.name}}</text>
+          <text class="proto_money">¥{{item.price}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="discuss_main pad30" wx:if="{{discuss_data}}" catchtap="goto_discuess">
+    <view class="title">
+      <text>评价</text>
+      <text>发表评论</text>
+    </view>
+    <view class="discusss">
+      <block wx:for="{{discuss_data}}">
+        <text class="label">{{item.title}}({{item.numbs}})</text>
+      </block>
+    </view>
+  </view>
+
+  <text class="pad30 bold blue px32 txt_title">作品细节</text>
+  <view class="imgs">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</view>
+
+
+
+<view class="bottom_btns">
+  <view class="bottom_btn" catchtap="goto_shop_car">
+    <image src="../icon/ico_words.png" class="ico_btn"></image>
+    <text>客服</text>
+  </view>
+  <view class="bottom_btn" catchtap="add_collect" wx:if="{{!is_colllect}}">
+    <image src="../icon/ico_collect_1.png" class="ico_btn"></image>
+    <text>收藏</text>
+  </view>
+  <view class="bottom_btn" catchtap="add_collect" wx:if="{{is_colllect}}">
+    <image src="../icon/ico_collect_0.png" class="ico_btn"></image>
+    <text>已收藏</text>
+  </view>
+  <view class=" bottom_btn" catchtap="now_buy">
+    <text class="txt_btn buy">立即购买</text>
+  </view>
+  <view class="bottom_btn" catchtap="add_shop_car">
+    <text class="txt_btn shop_car">加入购物车</text>
+  </view>
+</view>

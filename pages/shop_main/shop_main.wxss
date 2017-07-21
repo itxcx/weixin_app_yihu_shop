@@ -1,0 +1,95 @@
+/*index.css*/
+@import "../wxParse/wxParse.wxss";
+
+.nav_title {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 46rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eee;
+}
+
+.nav_title text {
+  /*color: #36465d;*/
+  font-size: 26rpx;
+}
+
+.nav_title>view {
+  padding: 30rpx 46rpx;
+  line-height: 1.7;
+  align-items: center;
+}
+
+.nav_title image {
+  height: 30rpx;
+  width: 18rpx;
+  margin-left: 10rpx;
+}
+
+.list {
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list_main {
+  width: 334rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 10rpx 15rpx #edecf4;
+  overflow: hidden;
+  margin-bottom: 25rpx;
+}
+
+.list_main image {
+  width: 334rpx;
+  height: 334rpx;
+}
+
+.title {
+  width: 300rpx;
+  font-size: 24rpx;
+  color: #132051;
+  padding: 14rpx 14rpx 10rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list_txt {
+  width: 100%;
+  flex-direction: row;
+  padding: 14rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.list_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.gray {
+  color: #c8c8c8;
+  font-size: 22rpx;
+}
+
+.list_left text {
+  width: 200rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.money {
+  font-size: 22rpx;
+  color: #f04848;
+}
+
+.list_main .shop_car {
+  width: 100rpx;
+  height: 46rpx;
+  display: flex;
+}

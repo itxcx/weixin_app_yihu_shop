@@ -1,0 +1,19 @@
+.label {
+  text-align: center;
+  padding: 8rpx 17rpx;
+  font-size: 28rpx;
+  color: #36465d;
+  border: 3rpx solid #132051;
+  margin-right: 20rpx;
+}
+
+.list {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.list_main {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

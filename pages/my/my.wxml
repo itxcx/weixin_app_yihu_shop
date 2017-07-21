@@ -1,0 +1,87 @@
+<!--个人中心-->
+<import src="/pages/templates/template.wxml" />
+
+<view class="container">
+  <view class="title" catchtap="goto_data">
+    <view class="photo">
+      <image src="{{userinfo.avatarUrl}}"></image>
+      <!--<image src="../icon/test.jpg"></image>-->
+    </view>
+    <view class="name">
+      <text>{{userinfo.nickName}}</text>
+      <!--<text>李勇</text>-->
+    </view>
+  </view>
+  <view class="my_order">
+    <navigator url="../my_order/my_order">
+      <text class="blue bold">我的订单</text>
+      <view>
+        <text>查看所有订单</text>
+        <image src="../icon/ico_next3.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="icos">
+    <view class="ico">
+      <navigator url='../my_order/my_order?classes=1' hover-class="none">
+        <view class="ico_num" wx:if="{{arrearage>0}}">
+          <text>{{arrearage}}</text>
+        </view>
+        <image src="../icon/ico_not_pay.png"></image>
+        <text>待付款</text>
+      </navigator>
+    </view>
+    <view class="ico">
+      <navigator url="../my_order/my_order?classes=2" hover-class="none">
+        <view class="ico_num" wx:if="{{unshipped>0}}">
+          <text>{{unshipped}}</text>
+        </view>
+        <image src="../icon/ico_shop_car.png"></image>
+        <text>待发货</text>
+      </navigator>
+    </view>
+    <view class="ico">
+      <navigator url="../my_order/my_order?classes=4" hover-class="none">
+        <view class="ico_num" wx:if="{{shipped>0}}">
+          <text>{{shipped}}</text>
+        </view>
+        <image src="../icon/ico_not_say.png"></image>
+        <text>待评价</text>
+      </navigator>
+    </view>
+    <view class="ico">
+      <navigator catchtap="shop_after">
+        <image src="../icon/ico_shop_agter.png"></image>
+        <text>售后服务</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="message">
+    <view class="my_collect">
+      <navigator url="../my_favorite/my_favorite">
+        <text>我的收藏</text>
+        <image class="next_ico" src="../icon/ico_next3.png"></image>
+      </navigator>
+    </view>
+    <view class="my_collect">
+      <navigator url="../my_address/my_address">
+        <text class="txt">我的地址</text>
+        <image class="next_ico" src="../icon/ico_next3.png"></image>
+      </navigator>
+    </view>
+    <view class="my_collect">
+      <navigator url="../history/history">
+        <text class="txt">浏览记录</text>
+        <image class="next_ico" src="../icon/ico_next3.png"></image>
+      </navigator>
+    </view>
+    <view class="my_collect">
+      <navigator url="../about/about">
+        <text class="txt">关于我们</text>
+        <image class="next_ico" src="../icon/ico_next3.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<template is="foot_nav" data="{{temp_data}}"></template>

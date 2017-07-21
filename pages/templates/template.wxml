@@ -1,0 +1,39 @@
+<!--底部模板-->
+<template name="foot_nav">
+  <view class="footer_nav row">
+    <!--首页-->
+    <navigator url="../index/index" open-type="reLaunch" class="foot_logo" wx:if="{{temp_data.class_name != -1}}">
+      <image src="{{temp_data.logo}}"></image>
+    </navigator>
+    <image src="{{temp_data.logo}}" class="foot_logo" wx:if="{{temp_data.class_name == -1}}"></image>
+    <!--商城-->
+    <view class="foot_shop_main col" wx:if="{{temp_data.class_name ==0 }}">
+      <image src="{{temp_data.shop_main}}"></image>
+      <text class="footer_txt active">商城</text>
+    </view>
+    <navigator url="../shop_main/shop_main" open-type="reLaunch" class="foot_shop_main col" wx:if="{{temp_data.class_name !=0}}">
+      <!--<view class="foot_shop_main col ">-->
+      <image src="{{temp_data.shop_main}} "></image>
+      <text class="footer_txt ">商城</text>
+      <!--</view>-->
+    </navigator>
+    <!--购物车-->
+    <view class="foot_shop_car col" wx:if="{{temp_data.class_name ==1}}">
+      <image src="{{temp_data.img_car}} "></image>
+      <text class="footer_txt active">购物车</text>
+    </view>
+    <navigator url="../shop_car/shop_car" open-type="reLaunch" class="foot_shop_car col" wx:if="{{temp_data.class_name !=1}}">
+      <image src="{{temp_data.img_car}}"></image>
+      <text class="footer_txt">购物车</text>
+    </navigator>
+    <!--我的-->
+    <view class="foot_my col" wx:if="{{temp_data.class_name ==2}}">
+      <image src="{{temp_data.img_my}} "></image>
+      <text class="footer_txt active">我的</text>
+    </view>
+    <navigator url="../my/my" open-type="reLaunch" class="foot_my col" wx:if="{{temp_data.class_name !=2}}">
+      <image src="{{temp_data.img_my}} "></image>
+      <text class="footer_txt">我的</text>
+    </navigator>
+  </view>
+</template>

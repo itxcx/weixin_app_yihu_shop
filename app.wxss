@@ -1,0 +1,177 @@
+/**app.wxss**/
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+view {
+  display: flex;
+  font-family: 'pingfang sc regular',
+                 'Microsoft YaHei',
+                 'Franklin Gothic Medium',
+                 'Arial Narrow',
+                 Arial,
+                 sans-serif;
+}
+
+.wxParse-p {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer_txt {
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #9c9c9c;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  border-top: 1px solid #eee;
+  background: #fff;
+  overflow: hidden;
+}
+
+.footer_nav .active {
+  color: #36465d;
+}
+
+.footer_nav .foot_logo {
+  display: block;
+  width: 118rpx;
+  height: 68rpx;
+  margin: 14rpx 0 16rpx;
+}
+
+.footer_nav .foot_logo>image {
+  margin: 0;
+}
+
+.footer_nav image {
+  margin: 12rpx 0 2rpx;
+}
+
+.footer_nav>view, .footer_nav>navigator {
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.foot_shop_car>image {
+  width: 54rpx;
+  height: 48rpx;
+}
+
+.foot_my>image {
+  width: 36rpx;
+  height: 48rpx;
+}
+
+.foot_shop_main>image {
+  width: 54rpx;
+  height: 48rpx;
+}
+
+.bot_pad {
+  padding-bottom: 120rpx;
+}
+
+.blue {
+  color: #36465d;
+}
+
+.gray {
+  color: #727272;
+}
+
+.px32 {
+  font-size: 32rpx;
+}
+
+.px26 {
+  font-size: 26rpx;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pad30 {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.lh_40 {
+  line-height: 40rpx;
+}
+
+.pad_top0 {
+  padding-top: 0;
+}
+
+.not_data {
+  margin-top: 80rpx;
+  flex-direction: column;
+}
+
+.not_data image {
+  width: 264rpx;
+  height: 237rpx;
+}
+
+.not_data text {
+  color: #9c9c9c;
+  font-size: 31rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-left: -13rpx;
+}
+
+text {
+  font-family: 'pingfang sc regular',
+                 'Microsoft YaHei',
+                 'Franklin Gothic Medium',
+                 'Arial Narrow',
+                 Arial,
+                 sans-serif;
+}

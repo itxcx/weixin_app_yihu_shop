@@ -1,0 +1,260 @@
+/* pages/shop_car/shop_car.wxss */
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.no {
+  margin-top: 65rpx;
+  color: #555;
+  font-size: 40rpx;
+  letter-spacing: 15rpx;
+}
+
+.title_main {
+  display: flex;
+  width: 100%;
+  height: 34px;
+  margin: 0 28rpx;
+  overflow: hidden;
+  justify-content: space-between;
+  line-height: 20rpx;
+}
+
+.not_data text {
+  margin-left: -2rpx;
+}
+
+.title_main>view {
+  display: inline-flex;
+  color: #f04848;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+
+.title_main text {
+  display: flex;
+  color: #a1a1a1;
+  font-size: 30rpx;
+  margin: 18rpx 0;
+}
+
+.pay {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 30rpx;
+}
+
+.pay image {
+  width: 20rpx;
+  height: 26rpx;
+  margin: 2rpx;
+}
+
+.shop_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 230rpx;
+}
+
+.shop_list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0;
+  border-bottom: 12rpx solid rgb(243, 243, 243);
+}
+
+.shop_list navigator {
+  display: flex;
+  width: 600rpx;
+  flex-direction: row;
+}
+
+.shop_list checkbox-group {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  display: flex;
+  /*margin: 28rpx 24rpx;*//*margin-top: 22rpx;*/
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox checkbox {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.shop_img {
+  width: 235rpx;
+  height: 235rpx;
+}
+
+.shop_img image {
+  width: 234rpx;
+  height: 234rpx;
+}
+
+.shop_intro {
+  display: flex;
+  flex-direction: column;
+  width: 280rpx;
+  justify-content: space-between;
+}
+
+.shop_title text {
+  font-size: 30rpx;
+  font-weight: bold;
+  width: 280rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shop_info {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop_info text {
+  color: #a1a1a1;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  padding-right: 35rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 15rpx 0;
+}
+
+.shop_money text {
+  color: #f33a3a;
+  font-size: 42rpx;
+  font-weight: bold;
+}
+
+.shop_num {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 58rpx;
+  color: #a1a1a1;
+  font-size: 26rpx;
+  line-height: 30rpx;
+}
+
+.shop_num text {
+  text-align: center;
+}
+
+.shop_num image {
+  padding: 30rpx 30rpx 0;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.shop_txt {
+  display: flex;
+  width: 500rpx;
+  margin-left: 34rpx;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 100rpx;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  justify-content: space-around;
+  background: #fff;
+}
+
+.foot_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot_left checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.all_check {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65rpx;
+}
+
+.all_check text {
+  font-size: 28rpx;
+  color: #555;
+  line-height: 28rpx;
+  margin-bottom: 18rpx;
+}
+
+.all_check checkbox {
+  margin: 22rpx 0 10rpx 5rpx;
+}
+
+.foot_right {
+  display: flex;
+  flex-direction: row;
+  width: 500rpx;
+  justify-content: flex-end;
+}
+
+.max_info {
+  display: flex;
+  margin: 35rpx 0;
+  flex-direction: column;
+  text-align: right;
+}
+
+.max_info view {
+  width: 100%;
+  text-align: right;
+}
+
+.max_money {
+  color: #f04848;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.max_freight {
+  margin-top: 22rpx;
+  font-size: 24rpx;
+  color: #a1a1a1;
+  line-height: 24rpx;
+}
+
+.now_buy {
+  display: flex;
+  width: 150rpx;
+  height: 90rpx;
+  margin: 20rpx;
+  line-height: 90rpx;
+  justify-content: center;
+  color: #fff;
+  background: #36465d;
+}
+
+.shop_info .proto_money {
+  color: #f33a3a;
+  margin-left: 25rpx;
+}

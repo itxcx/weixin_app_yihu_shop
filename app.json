@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",    
+    "pages/about/about",
+    "pages/my_data/my_data",
+    "pages/history/history",
+    "pages/discuss/discuss",
+    "pages/shop_main/shop_main",
+    "pages/address_create/address_create",
+    "pages/intro/intro",
+    "pages/address_edit/address_edit",
+    "pages/my_address/my_address",
+    "pages/my_favorite/my_favorite",
+    "pages/my_order/my_order",
+    "pages/sel_address/sel_address",
+    "pages/my_info/my_info",
+    "pages/dateil/dateil",
+    "pages/confirm/confirm",
+    "pages/my/my",
+    "pages/shop_car/shop_car",
+    "pages/templates/template"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#36465D",
+    "navigationBarTitleText": "艺乎商城",
+    "navigationBarTextStyle": "#fff"
+  },
+  "debug": true
+}
